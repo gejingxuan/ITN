@@ -257,11 +257,12 @@ if __name__ == '__main__':
     argparser.add_argument('--group', type=str, default='316')
     argparser.add_argument('--dataset', type=str, default='train')
     argparser.add_argument('--num_process', type=int, default='16')
-
+    argparser.add_argument('--distance', type=int, default='800000')
     args = argparser.parse_args()
 
     st = time.time()
 
+    distance = args.distance
     group = args.group
     dataset_name = args.dataset
     home_path = '/home/jingxuan/MHC/baseline/ITN/%s/%s' %(group,dataset_name)
@@ -287,6 +288,6 @@ if __name__ == '__main__':
                             graph_ls_file=home_path + path_marker + 'data.bin',
                             graph_dic_path=home_path + path_marker + 'sep_graphs',
                             num_process=num_process,
-                            distance=800000, path_marker='/', pocket_file_path='%s/sep' %home_path)
+                            distance=distance, path_marker='/', pocket_file_path='%s/sep' %home_path)
     end = time.time()
     print(end - st, 'S')

@@ -21,7 +21,7 @@ python data_gen.py --num_process 16 --distance 800000
 ```
 ## 3. Training and Prediction
 Then we use the input data generated in the last step to train and test model.
-For different classes of PpIs, you can set padding size by change the `max_ligand_num_residues` `max_pocket_num_residues`
+For different classes of PpIs, you can set padding size by change the `max_ligand_num_residues` and `max_pocket_num_residues`
 
 Taking the pMHC I PpIs as an example: 
 ```

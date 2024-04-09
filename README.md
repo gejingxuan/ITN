@@ -1,7 +1,7 @@
 # Interaction Transformer Net
 Interaction Transformer Net (ITN), is a deep-learning-based framework for PpIs prediction, 
 which represents the protein and peptide structures at residue-level with three-dimensional and sequence information, 
-and encodes the interaction information between protein and peptide as a graph.:blush:
+and encodes the interaction information between protein and peptide as a graph.
 
 # Usage
 ## 1. Environment
